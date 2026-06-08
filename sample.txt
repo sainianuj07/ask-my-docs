@@ -1,0 +1,7 @@
+Retrieval-Augmented Generation, or RAG, is a technique for making language models answer questions using a specific set of documents rather than only their built-in knowledge. The core idea is simple. Instead of sending an entire library of text to the model every time someone asks a question, the system first finds the few most relevant passages and sends only those, along with the question.
+
+This matters for product teams because it keeps answers grounded in trusted sources. When a model answers from retrieved passages, it is far less likely to invent facts, and it can cite where each answer came from. Trust, not raw intelligence, is often the real product challenge in applied AI.
+
+A RAG pipeline has a few stages. Documents are split into smaller chunks. Each chunk is converted into a vector, a list of numbers that captures its meaning. The vectors are stored in a database built for fast similarity search. When a question arrives, it is also converted into a vector, and the system retrieves the chunks whose vectors are most similar. Those chunks are handed to the model to generate a final answer.
+
+Chunk size is one of the most important product decisions in this whole process. Chunks that are too large make retrieval vague, because a single chunk covers too many ideas. Chunks that are too small lose the surrounding context a reader needs to understand them. Choosing a chunk size is a tradeoff, and the right answer depends on the documents and the questions people actually ask.

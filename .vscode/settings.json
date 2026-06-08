@@ -1,0 +1,9 @@
+{
+    "chat.agent.sandbox.fileSystem.mac": {
+        "denyRead": [],
+        "allowRead": [],
+        "allowWrite": [],
+        "denyWrite": []
+    },
+    "git.path": "C:\\Program Files\\Git\\bin\\git.exe"
+}
