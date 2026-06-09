@@ -36,7 +36,7 @@ Answer:"""
 
 # --- 5. Ask Gemini and print the grounded answer ---
 response = gemini.models.generate_content(
-    model="gemini-2.5-flash",
+    model="gemini-2.5-flash-lite",
     contents=prompt,
 )
 
