@@ -1,6 +1,12 @@
-streamlit
-chromadb
-google-genai
-pypdf
-python-dotenv
+streamlit==1.58.0
+chromadb==1.5.9
+google-genai==2.8.0
+pypdf==5.9.0
+python-dotenv==1.2.2
+protobuf==6.33.6
+opentelemetry-api==1.42.1
+opentelemetry-sdk==1.42.1
+opentelemetry-proto==1.42.1
+opentelemetry-exporter-otlp-proto-grpc==1.42.1
+opentelemetry-exporter-otlp-proto-common==1.42.1
 pysqlite3-binary
